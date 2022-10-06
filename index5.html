@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacteaza-ma📞</title>
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #5a13b6;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #1818a4;
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      </style>
+</head>
+<body>
+ <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Numele</label>
+    <input type="text" id="fname" name="firstname" placeholder="Numele tau">
+
+    <label for="lname">Prenumele</label>
+    <input type="text" id="lname" name="lastname" placeholder="Prenumele tau..">
+
+    <label for="country">Tara</label>
+    <select id="country" name="country">
+      <option value="Austria">Austria</option>
+      <option value="Germania">Germania</option>
+      <option value="Elvetia">Elvetia</option>
+      <option value="Franta">Franta</option>
+      <option value="Anglia">Anglia</option>
+      <option value="Romania">Romania</option>
+    </select>
+    <label for="subject">Subiectul</label>
+    <textarea id="subject" name="subject" placeholder="Scrie ceva..." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
