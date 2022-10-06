@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>🌎LaboratorBiologie.com</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: black;
+}
+.hero{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    size:17px;
+}
+.content{
+    text-align: center;
+    background-color: #fff;
+    height: 320px;
+    border-radius: 200px;
+}
+.content h1{
+    font-size: 130px;
+    height: 300px;
+    width: 850px;
+    color:black;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px black;
+    color:transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    font-size: 24px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+@media (max-aspect-ratio:16/9)
+{
+    .back-video{
+        width:100%;
+        height:100%;
+    }
+}
+
+.content a{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.content h1{
+    background-color:transparent;
+    margin-left: 80px;
+    border-radius: 100px;
+    margin-bottom: 87px;
+    width:88%;
+}
+#scroll{
+    height: 800px;
+    width: 100%;
+    background-color: black;
+}
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+	
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+#fff{
+    font-size: 23px;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  .hero nav ul li a:hover {
+    font-weight: bolder;
+}
+.hero nav ul li a {
+    text-decoration: none;
+    padding-bottom: 8px;
+    color: #fff;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 20px;
+    width: 120px;
+    margin-right: 0;
+    padding-left: 7px;
+}
+nav a:hover {
+    color: #f00a0a;
+    background: rgb(219, 12, 12);
+    box-shadow: 0 0 10px rgb(255, 21, 0), 0 0 40px rgb(255, 0, 0), 0 0 80px rgb(255, 0, 0);
+}
+#fff{
+    display: inline-block;
+}
+.logo{
+    position: relative;
+    animation: mymove 5s infinite;
+    top: 10px;
+    margin-left: -5px;
+    font-size: 1.2rem;
+}
+@keyframes mymove {
+  from {left: 50px;}
+  to {left: 5px;}
+}
+@keyframes myothermove {
+  from {top: 5px;}
+  to {top: 5px;}
+}
+@media(min-width:1100px)
+{
+    .content{
+        text-align: center;
+    background-color: #fff;
+    height: 340px;
+    border-radius: 200px;
+    padding-top:30px;
+    width:2000px;
+}
+    }
+        </style>
+</head>
+<body>
+    <div class="hero"> 
+        <video autoplay loop muted plays-inline>
+            <source src="resurse/Biology Laboratory Orientation.mp4" type="video/mp4" class="back-video">
+        </video>
+        <nav>
+            <img src="resurse/6e5c298e85645747605288c909285522.webp" class="logo" height="150px" width="200px" style="vertical-align:middle;margin:0px -130px">
+            <ul>
+                <li><a href="index.html" id="fff">Acasa</a></li>
+                <li><a href="index4.html"id="fff">Noutatii</a></li>
+                <li><a href="index3.html"id="fff">Despre noi</a></li>
+                <li><a href="index5.html"id="fff">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Laboratorul de Biologie</h1>
+            <a href="#scroll"><b>Exploreaza</b></a>
+        </div>
+    </div>
+    <section id="scroll">
+        <hr>
+        <div class="text">
+            <h1 style="color:#fff;background:green;width:100%;margin-top: 10px;height:90px;font-size:60px;padding-left: 300px;padding-top: 15px;">Asa arata un laborator de biologie:</h1>
+        </div>
+        <hr>
+        <div class="row"> 
+                <div class="column">
+                  <img src="https://www.kines.umich.edu/sites/default/files/styles/featured_image/public/2020-08/Muscle%20Biology%20Lab_0.jpg?itok=SlwwoL9x" style="width:100%">
+                  <img src="https://www.isis.stfc.ac.uk/Gallery/R55%20bio%20lab.png" style="width:100%">
+                  <img src="https://wallpaperaccess.com/full/7149343.jpg" style="width:100%">
+                  <img src="https://media.hotnews.ro/media_server1/image-2022-08-15-25734362-0-laborator-biologie.jpg" style="width:100%">
+                  <img src="https://wallpaperaccess.com/full/2852782.jpg" style="width:100%">
+                  <img src="https://wallpaperaccess.com/thumb/1267757.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="https://studiousguy.com/wp-content/uploads/2021/09/List-of-Biology-Laboratory-Apparatus-and-Their-Uses.jpg" style="width:100%">
+                  <img src="https://bio.sabanciuniv.edu/sites/bio.sabanciuniv.edu/files/pictures/biology-research-laboratory-iv1_l.jpg" style="width:100%">
+                  <img src="https://thumbs.dreamstime.com/b/medical-laboratory-test-tube-chemistry-biology-lab-test-scientific-research-development-healthcare-concept-background-149835735.jpg" style="width:100%">
+                  <img src="https://labfurnitureandfumehoods.com/technical/wp-content/uploads/2021/08/modular-steel-laboratory-furniture0052.jpg" style="width:100%">
+                  <img src="https://media.istockphoto.com/photos/woman-scientist-in-lab-look-at-science-microscope-medical-test-and-picture-id1330728771?b=1&k=20&m=1330728771&s=170667a&w=0&h=dPZrgQ7ky7d_g1ZgUCOV5jIG927hfggAOan3_CNOgNE=" style="width:100%">
+                  <img src="https://thumbs.dreamstime.com/b/biology-lab-worker-examining-plant-tube-liquid-organic-products-stock-photo-148652204.jpg" style="width:100%">
+                </div>  
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1616996691748-3f5f78093ab0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YmlvbG9neSUyMGxhYnxlbnwwfHwwfHw%3D&w=1000&q=80" style="width:100%">  
+                </div>
+        </div>
+    </section>
+    <hr>
+</body>
+</html>
